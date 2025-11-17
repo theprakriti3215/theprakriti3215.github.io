@@ -1,22 +1,22 @@
 /* 全体の基本設定 */
 body {
   font-family: Arial, sans-serif;
-  background-color: #121212; /* ダーク背景 */
-  color: #e0e0e0;           /* 薄い文字色 */
+  background-color: #121212; 
+  color: #e0e0e0;
   margin: 20px;
 }
 
 /* ヘッダー */
 h1 {
   text-align: center;
-  font-size: 2.4em;          /* 文字大きめ */
+  font-size: 2.4rem;
   margin-bottom: 25px;
   color: #ffffff;
 }
 
 h2 {
   text-align: center;
-  font-size: 1.8em;          /* 文字大きめ */
+  font-size: 1.8rem;
   margin-top: 35px;
   margin-bottom: 20px;
   color: #ffffff;
@@ -36,26 +36,26 @@ h2 {
   text-align: center;
   text-decoration: none;
   color: #e0e0e0;
-  width: 160px;             /* 少し大きめ */
+  width: 45%; /* スマホでも2列表示 */
+  max-width: 180px;
 }
 
 .card img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 3px 8px rgba(255,255,255,0.1); /* ダーク用の柔らかい影 */
+  box-shadow: 0 3px 8px rgba(255,255,255,0.1);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* 画像ホバー効果 */
 .card img:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(255,255,255,0.2);
 }
 
-/* 曲タイトル */
 .card p {
   margin-top: 10px;
-  font-size: 1.05em; /* 文字大きめ */
+  font-size: 1.05rem;
 }
 
 /* ランダムピックアップ */
@@ -65,7 +65,9 @@ h2 {
 }
 
 #featured img {
-  width: 220px;                 /* 少し大きめ */
+  width: 90%;
+  max-width: 300px;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(255,255,255,0.2);
 }
@@ -73,5 +75,22 @@ h2 {
 #featured p {
   margin-top: 12px;
   font-weight: bold;
-  font-size: 1.2em;            /* 文字大きめ */
+  font-size: 1.2rem;
+}
+
+/* メディアクエリ：小さい画面調整 */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .card {
+    width: 90%;  /* 小さいスマホは1列表示 */
+    max-width: none;
+  }
+  #featured img {
+    max-width: 90%;
+  }
 }
