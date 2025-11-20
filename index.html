@@ -1,48 +1,95 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Music Shop</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Player</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #fafafa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .player-section {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .cover {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    .title {
+      margin-top: 12px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    iframe {
+      margin-top: 12px;
+      width: 100%;
+      max-width: 360px;
+      height: 120px;
+      border: 0;
+    }
+
+    .next-btn {
+      margin-top: 15px;
+      padding: 10px 22px;
+      background: #333;
+      border: 1px solid #555;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .grid {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 12px;
+      width: 90%;
+      max-width: 800px;
+      padding-bottom: 40px;
+    }
+
+    .grid-item {
+      text-align: center;
+    }
+
+    .grid-cover {
+      width: 100%;
+      border-radius: 4px;
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body>
 
-<h1>My Music Shop</h1>
+  <div class="player-section">
+    <img id="cover" class="cover" src="" alt="cover" />
+    <div id="title" class="title">TITLE</div>
+    <iframe id="bcplayer" src=""></iframe>
+    <button class="next-btn" onclick="playRandom()">NEXT</button>
+  </div>
 
-<!-- ランダムピックアップ -->
-<div id="featured"></div>
+  <div class="grid" id="grid"></div>
 
-<h2>All Releases</h2>
-<div class="grid">
-  <a class="card" href="song1.html">
-    <img src="images/0001.png" alt="Song1">
-    <p>Song Title 1</p>
-  </a>
-
-  <a class="card" href="song2.html">
-    <img src="images/002.jpg" alt="Song2">
-    <p>Song Title 2</p>
-  </a>
-</div>
-
-<script>
-// ランダムピックアップ
-const songs = [
-  {title: "Song Title 1", img: "images/0001.png", link: "song1.html"},
-  {title: "Song Title 2", img: "images/002.jpg", link: "song2.html"}
-];
-
-const pick = songs[Math.floor(Math.random() * songs.length)];
-
-document.getElementById("featured").innerHTML = `
-  <h2>Pick Up</h2>
-  <a href="${pick.link}">
-    <img src="${pick.img}" alt="${pick.title}">
-    <p>${pick.title}</p>
-  </a>
-`;
-</script>
-
-</body>
-</html>
+  <script>
+    // ▼ 曲データ一覧（ Bandcamp埋め込みURL・ジャケットURL・曲名・個別ページURL ）
+    const tracks = [
+      {
+        title: "Track 1",
+        cover: "cover1.jpg",
+        embed: "https://bandcamp.com/EmbeddedPlayer/track=XXXX/size=large/bgcol=333333/linkcol=ffffff/transparent=true/",
+       
