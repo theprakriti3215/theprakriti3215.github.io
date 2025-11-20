@@ -4,40 +4,48 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Music</title>
+
 <style>
   body {
     font-family: sans-serif;
     margin: 0;
-    padding: 20px;
-    background: #f8f8f8;
+    padding: 16px;
+    background: #fafafa;
   }
 
+  /* ▼ 上のプレーヤーブロック */
   .player-container {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
     text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .cover-img {
-    width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    margin-bottom: 10px;
   }
 
   h2 {
-    margin: 10px 0;
-    font-size: 22px;
+    margin: 14px 0;
+    font-size: 20px;
+    font-weight: 600;
   }
 
+  /* ▼ Bandcamp iframe をスマホ最適化 */
+  iframe {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    border: 0;
+  }
+
+  /* ▼ グリッド */
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 20px;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    max-width: 900px;
+    margin: 0 auto;
   }
 
   .grid-item {
-    cursor: pointer;
     text-align: center;
+    cursor: pointer;
   }
 
   .grid-item img {
@@ -47,22 +55,16 @@
   }
 
   .grid-item-title {
-    margin-top: 8px;
-    font-size: 14px;
+    margin-top: 6px;
+    font-size: 13px;
   }
 
-  iframe {
-    width: 350px;
-    height: 470px;
-    border: 0;
-    margin-top: 20px;
-  }
 </style>
 </head>
 
 <body>
+
 <div class="player-container">
-  <img id="main-cover" class="cover-img" src="" alt="cover" />
   <h2 id="main-title"></h2>
   <iframe id="main-player" seamless></iframe>
 </div>
@@ -78,7 +80,7 @@ fetch("songs.json")
     const random = songs[Math.floor(Math.random() * songs.length)];
     setMainTrack(random);
 
-    // グリッド一覧表示
+    // ▼ グリッド生成
     const grid = document.getElementById("grid");
     songs.forEach(song => {
       const div = document.createElement("div");
@@ -92,7 +94,6 @@ fetch("songs.json")
     });
 
     function setMainTrack(song) {
-      document.getElementById("main-cover").src = song.cover;
       document.getElementById("main-title").textContent = song.title;
       document.getElementById("main-player").src = song.embed;
     }
