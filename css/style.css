@@ -23,28 +23,32 @@ header {
 }
 
 /* スライドインメニュー */
+/* メニュー全体 */
 #slide-menu {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
+    transform: translateX(100%);
     width: 70%;
     height: 100%;
-    background: rgba(0,0,0,0.9);
-    color: #fff;
+    background: rgba(0,0,0,0.95);
+    color: white;
     z-index: 3000;
-    transition: 0.4s;
-    padding-top: 60px;
+    transition: transform 0.4s ease;
+    overflow-y: auto;
 }
 
+/* 開いた状態 */
 #slide-menu.open {
-    right: 0;
+    transform: translateX(0);
 }
 
+/* 閉じるボタン */
 #slide-menu .close-btn {
     position: absolute;
     top: 20px;
     right: 20px;
-    font-size: 26px;
+    font-size: 28px;
     cursor: pointer;
 }
 
