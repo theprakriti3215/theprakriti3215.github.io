@@ -73,8 +73,10 @@ header {
 
 /* ヒーロー */
 #hero {
+    
     width: 100%;
-    min-height: 100svh;
+    height: 100svh;
+    overflow: hidden;
     background-image: url("../images/the prakriti001.jpg");/* ← 差し替え */
     background-size: cover;
     background-position: center;
