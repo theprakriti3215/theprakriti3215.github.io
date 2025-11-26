@@ -69,7 +69,7 @@ header {
 /* ヒーロー */
 #hero {
     height: 100vh;
-    background-image: url('hero.jpg'); /* ← 差し替え */
+    background-image: url("../images/hero.jpg") /* ← 差し替え */
     background-size: cover;
     background-position: center;
     position: relative;
