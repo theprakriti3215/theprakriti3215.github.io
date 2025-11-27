@@ -16,7 +16,7 @@ document.querySelectorAll("#slide-menu a").forEach(link => {
 const songs = [
   {
     jacket: "images/0001.png",
-    quote1: "バスに揺られて 町に行く",
+    quote1: "バスに揺られて 街に行く",
     quote2: "あの頃の僕はまだ誰も知らない",
     title: "Bus Stop Twilight",
     link: "tracks/song1.html"
@@ -37,9 +37,9 @@ const songs = [
   },
   {
     jacket: "images/0001.png",
-    quote1: "整理券を握りしめて",
-    quote2: "あの街へ向かっていた",
-    title: "Ticket",
+    quote1: "how italian is your italian？",
+    quote2: "your italian is really italian ？",
+    title: "friend's italian",
     link: "tracks/song4.html"
   }
 ];
