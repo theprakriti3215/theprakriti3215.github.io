@@ -198,9 +198,13 @@ header {
     width: 60%;
   }
 
-  .pickup-text p,
-  .pickup-from {
-    text-align: left;  /* 左右レイアウトを壊さない */
+  .pickup-left .pickup-text,
+  .pickup-left .pickup-from {
+    text-align: left;
+  }
+
+  .pickup-right .pickup-text,
+  .pickup-right .pickup-from {
+    text-align: right;
   }
 }
-
