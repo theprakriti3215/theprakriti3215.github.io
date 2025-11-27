@@ -138,7 +138,6 @@ header {
 
 .pickup-item img {
   width: 40%;
-  border-radius: 6px;
 }
 
 /* 1つめ → 画像右・テキスト左 */
@@ -178,25 +177,20 @@ header {
 
 .tracks-grid img {
   width: 100%;
-  border-radius: 4px;
 }
-
 /* ========== RESPONSIVE ========== */
 @media (max-width: 700px) {
-  #hero h1 {
-    font-size: 2rem;
-  }
-  .pickup-item {
-    flex-direction: column !important;
-  }
   .pickup-item img {
-    width: 80%;
+    width: 45%;   /* 40% → 少し広めでもOK */
   }
+
   .pickup-text {
-    width: 100%;
-    text-align: center;
+    width: 55%;
   }
+
+  .pickup-text p,
   .pickup-from {
-    text-align: center !important;
+    text-align: left;  /* 左右レイアウトを壊さない */
   }
 }
+
