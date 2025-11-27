@@ -191,11 +191,11 @@ header {
 /* ========== RESPONSIVE ========== */
 @media (max-width: 700px) {
   .pickup-item img {
-    width: 40%;   /* 40% → 少し広めでもOK */
+    width: 45%;   /* 40% → 少し広めでもOK */
   }
 
   .pickup-text {
-    width: 60%;
+    width: 55%;
   }
 
   .pickup-left .pickup-text,
