@@ -35,31 +35,27 @@
         </div>
     </section>
 
-    <!-- PICK UP -->
-    <section id="pickup">
-        <h2>Pick Up Track</h2>
+<!-- ===== PICKUP SECTION ===== -->
+<section id="pickup">
+  <h2>Pick Up</h2>
+  <div id="pickup-container">
+    <!-- JS でランダム生成 -->
+  </div>
+</section>
 
-        <!-- ここに Bandcamp プレイヤーを貼る -->
-        <div id="pickup-player">
-            <!-- 例としてダミー埋め込み -->
-            <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=120591234/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://theprakriti.bandcamp.com/album/-">残響 by the prakriti</a></iframe>
-        </div>
+<!-- ===== TRACKS SECTION ===== -->
+<section id="tracks">
+  <h2>Tracks</h2>
+  <div class="tracks-grid">
+    <!-- ここに全曲ジャケットを手で入れる -->
+    <a href="tracks/song1.html"><img src="images/jacket01.jpg" alt=""></a>
+    <a href="tracks/song2.html"><img src="images/jacket02.jpg" alt=""></a>
+    <a href="tracks/song3.html"><img src="images/jacket03.jpg" alt=""></a>
+    <a href="tracks/song4.html"><img src="images/jacket04.jpg" alt=""></a>
+    <!-- …以下続く -->
+  </div>
+</section>
 
-        <a class="link" href="#">→ 曲ページへ</a>
-    </section>
-
-    <!-- TRACKS GRID -->
-    <section id="tracks">
-        <h2>All Tracks</h2>
-        <div class="grid">
-            <!-- ここにジャケットを追加していく -->
-            <a href="song1.html"><img src="jacket1.jpg" class="cover"></a>
-            <a href="song2.html"><img src="jacket2.jpg" class="cover"></a>
-            <a href="song3.html"><img src="jacket3.jpg" class="cover"></a>
-            <a href="song4.html"><img src="jacket4.jpg" class="cover"></a>
-        </div>
-    </section>
-
-    <script src="js/script.js"></script>
+<script src="pickup.js"></script>
 </body>
 </html>
