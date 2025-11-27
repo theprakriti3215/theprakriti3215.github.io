@@ -126,6 +126,38 @@ header {
   color: #000;           /* ← from 曲名 */
 }
 
+/* ===== PICKUP レイアウト ===== */
+.pickup-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.pickup-item img {
+  width: 40%;
+  border-radius: 6px;
+}
+
+/* 1つめ → 画像右・テキスト左 */
+.pickup-left {
+  flex-direction: row-reverse;
+}
+
+/* 2つめ → 画像左・テキスト右 */
+.pickup-right {
+  flex-direction: row;
+}
+
+/* テキストブロック */
+.pickup-text {
+  width: 60%;
+}
+
+
+
 /* ========== TRACK GRID ========== */
 #tracks {
   padding: 3rem 1.5rem;
