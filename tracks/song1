@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>曲名 - The Prakriti</title>
+  <link rel="stylesheet" href="../css/song.css">
+</head>
+<body>
+
+<!-- ===== HEADER（ハンバーガー） ===== -->
+<header>
+  <div id="menu-icon">☰</div>
+</header>
+
+<!-- ===== スライドメニュー ===== -->
+<nav id="slide-menu">
+  <div class="close-btn">×</div>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../index.html#tracks">Tracks</a></li>
+    <li><a href="https://yourbandcamp.com">Bandcamp</a></li>
+  </ul>
+</nav>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main>
+
+  <!-- ジャケット大きく表示 -->
+  <section id="jacket">
+    <img src="../images/0001.png" alt="ジャケット">
+    <h1 class="song-title">Bus Stop Twilight</h1>
+  </section>
+
+  <!-- Bandcampプレイヤー -->
+  <section id="player">
+    <!-- ここに Bandcamp 埋め込み -->
+    <iframe style="border: 0; width: 100%; height: 120px;" 
+      src="https://bandcamp.com/EmbeddedPlayer/track=00000000/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/" 
+      seamless>
+    </iframe>
+  </section>
+
+  <!-- 歌詞：白背景 -->
+  <section id="lyrics">
+    <h2>Lyrics</h2>
+    <pre>
+バスに揺られて
+街に行く
+整理券を握りしめて
+あの頃の僕 —— 
+    </pre>
+  </section>
+
+  <!-- テキストノート：黒背景 -->
+  <section id="notes">
+    <h2>Notes</h2>
+    <p>
+制作メモや覚え書きをここに書く。  
+曲の裏話・テーマ・機材ノートなど。
+    </p>
+  </section>
+
+  <!-- 前/次 ボタン -->
+  <section id="nav-tracks">
+    <a href="song0.html" class="prev">← Prev</a>
+    <a href="song2.html" class="next">Next →</a>
+  </section>
+
+</main>
+
+<script src="../js/song.js"></script>
+
+</body>
+</html>
