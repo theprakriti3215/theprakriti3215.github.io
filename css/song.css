@@ -1,0 +1,137 @@
+body,html {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+               "Hiragino Sans", "Noto Sans JP", sans-serif;
+  overflow-x: hidden;
+}
+
+/* ========= HEADER（ハンバーガー） ========= */
+header {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 2000;
+}
+
+#menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+/* ========= スライドメニュー ========= */
+#slide-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  width: 70%;
+  height: 100%;
+  background: rgba(0,0,0,0.95);
+  color: white;
+  z-index: 3000;
+  transition: transform 0.4s ease;
+  overflow-y: auto;
+}
+
+#slide-menu.open {
+  transform: translateX(0);
+}
+
+#slide-menu .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#slide-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#slide-menu li {
+  margin: 25px 0;
+  padding-left: 25px;
+}
+
+#slide-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+}
+
+/* ========= ジャケット ========= */
+#jacket {
+  padding-top: 80px;
+  text-align: center;
+}
+
+#jacket img {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.song-title {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+/* ========= Bandcamp player ========= */
+#player {
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+/* ========= Lyrics（白背景） ========= */
+#lyrics {
+  background: #fff;
+  color: #000;
+  padding: 2rem 1.5rem;
+}
+
+#lyrics h2 {
+  margin-top: 0;
+}
+
+#lyrics pre {
+  white-space: pre-wrap;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* ========= Notes（黒背景） ========= */
+#notes {
+  background: #000;
+  color: #fff;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid #333;
+}
+
+#notes h2 {
+  margin-top: 0;
+}
+
+/* ========= 前/次 ナビ ========= */
+#nav-tracks {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+}
+
+#nav-tracks a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+#nav-tracks a:hover {
+  opacity: 1;
+}
