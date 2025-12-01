@@ -119,19 +119,26 @@ header {
 }
 
 /* ========= 前/次 ナビ ========= */
-#nav-tracks {
+.track-nav {
   display: flex;
-  justify-content: space-between;
-  padding: 2rem 1.5rem;
+  flex-direction: column;   /* ← 縦並び */
+  gap: 0.8rem;
+  margin: 2rem 0;
+  font-size: 1rem;
 }
 
-#nav-tracks a {
-  color: #fff;
+.track-nav a {
   text-decoration: none;
-  font-size: 1.1rem;
+  color: #fff;
   opacity: 0.85;
 }
 
-#nav-tracks a:hover {
-  opacity: 1;
+/* 左寄せ（前の曲） */
+.track-nav .prev {
+  text-align: left;
+}
+
+/* 右寄せ（次の曲） */
+.track-nav .next {
+  text-align: right;
 }
