@@ -22,24 +22,24 @@ const songs = [
   },
   {
     jacket: "images/senjoukousuitai.jpg",
-    quote1: "傘の骨の魚泳ぐ",
-    quote2: "アクリルの水槽みたい",
+    quote1: "たこ焼きの数え方　知ってる？",
+    quote2: "得意げにキミはわらう",
     title: "線上降水帯",
     link: "senjoukousuitai.html"
   },
   {
-    jacket: "images/0001.png",
-    quote1: "色褪せた看板の前で",
-    quote2: "ただ立ち止まっていた",
-    title: "Mono Chrome",
-    link: "tracks/song3.html"
+    jacket: "images/aromajewel.jpg",
+    quote1: "ラムネを開ける　ポン",
+    quote2: "シュワシュワあふれ　あふれ　あふれ",
+    title: "alomajewel",
+    link: "tracks/alomajewel.html"
   },
   {
-    jacket: "images/0001.png",
+    jacket: "images/friends-italian.jpg",
     quote1: "how italian is your italian？",
     quote2: "your italian is really italian ？",
     title: "friend's italian",
-    link: "tracks/song4.html"
+    link: "tracks/friends-italian.html"
   }
 ];
 
