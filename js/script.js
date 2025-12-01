@@ -31,8 +31,8 @@ const songs = [
     jacket: "images/aromajewel.jpg",
     quote1: "ラムネを開ける　ポン",
     quote2: "シュワシュワあふれ　あふれ　あふれ",
-    title: "alomajewel",
-    link: "tracks/alomajewel.html"
+    title: "aroma jewel",
+    link: "tracks/aromajewel.html"
   },
   {
     jacket: "images/friends-italian.jpg",
