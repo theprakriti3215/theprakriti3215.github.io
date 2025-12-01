@@ -179,15 +179,37 @@ header {
   margin-bottom: 1.5rem;
 }
 
+/* グリッド全体 */
 .tracks-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 1rem;
 }
 
+/* 各リンク（画像＋曲名） */
+.tracks-grid a {
+  text-decoration: none;   /* 下線消す */
+  color: #000;             /* 黒文字 */
+  display: flex;
+  flex-direction: column;  /* 画像の下に曲名 */
+  align-items: center;     /* 中央揃え */
+  gap: 0.5rem;             /* 画像と曲名の間隔 */
+}
+
+/* ジャケット画像 */
 .tracks-grid img {
   width: 100%;
+  border-radius: 4px;
 }
+
+/* 曲名タイトル */
+.track-title {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+
 
 /* ===== ABOUT SECTION ===== */
 
