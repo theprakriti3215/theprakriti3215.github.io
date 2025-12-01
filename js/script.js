@@ -12,12 +12,11 @@ document.querySelectorAll("#slide-menu a").forEach(link => {
 });
 
 // ---- ピックアップに使うデータ ----
-// 例として適当な歌詞引用文を入れてあります
 const songs = [
   {
     jacket: "images/fire-flower.jpg",
-    quote1: "打ち上げ失敗　たぶんOK",
-    quote2: "僕に幸あれ　クラッカー鳴れ",
+    quote1: "花火大会よりも　ハードディスク",
+    quote2: "消える前に　バックアップkiss",
     title: "fire flower",
     link: "tracks/fire-flower.html"
   },
