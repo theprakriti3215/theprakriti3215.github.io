@@ -25,7 +25,7 @@ const songs = [
     quote1: "たこ焼きの数え方　知ってる？",
     quote2: "得意げにキミはわらう",
     title: "線上降水帯",
-    link: "senjoukousuitai.html"
+    link: "tracks/senjoukousuitai.html"
   },
   {
     jacket: "images/aromajewel.jpg",
