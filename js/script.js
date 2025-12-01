@@ -22,7 +22,7 @@ const songs = [
     link: "tracks/fire-flower.html"
   },
   {
-    jacket: "senjoukousuitai.jpg",
+    jacket: "images/senjoukousuitai.jpg",
     quote1: "傘の骨の魚泳ぐ",
     quote2: "アクリルの水槽みたい",
     title: "線上降水帯",
