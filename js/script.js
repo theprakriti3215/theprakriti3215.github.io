@@ -15,18 +15,18 @@ document.querySelectorAll("#slide-menu a").forEach(link => {
 // 例として適当な歌詞引用文を入れてあります
 const songs = [
   {
-    jacket: "images/0001.png",
-    quote1: "バスに揺られて 街に行く",
-    quote2: "あの頃の僕はまだ誰も知らない",
-    title: "Bus Stop Twilight",
-    link: "tracks/song1.html"
+    jacket: "images/fire-flower.jpg",
+    quote1: "打ち上げ失敗　たぶんOK",
+    quote2: "僕に幸あれ　クラッカー鳴れ",
+    title: "fire flower",
+    link: "tracks/fire-flower.html"
   },
   {
-    jacket: "images/0001.png",
+    jacket: "senjoukousuitai.jpg",
     quote1: "傘の骨の魚泳ぐ",
-    quote2: "アクリルのスイソーみたい",
-    title: "Overdrive Glow",
-    link: "tracks/song2.html"
+    quote2: "アクリルの水槽みたい",
+    title: "線上降水帯",
+    link: "senjoukousuitai.html"
   },
   {
     jacket: "images/0001.png",
