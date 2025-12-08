@@ -41,6 +41,20 @@ const songs = [
     title: "friend's italian",
     link: "tracks/friends-italian.html"
   }
+    {
+    jacket: "images/tomato-no-kandume.jpg",
+    quote1: "煮込まれても　とけない赤が",
+    quote2: "あふれだす",
+    title: "トマトの缶詰",
+    link: "tracks/tomato-no-kandume.html"
+  }
+{
+    jacket: "images/goodgame.jpg",
+    quote1: "12時までの　かぼちゃを引っぱり",
+    quote2: "カチカチヤマで踊ってた",
+    title: "good game",
+    link: "tracks/goodgame.html"
+  }
 ];
 
 // ---- ランダムで2曲取り出す ----
