@@ -14,6 +14,62 @@ document.querySelectorAll("#slide-menu a").forEach(link => {
 // ---- ピックアップに使うデータ ----
 const songs = [
   {
+    jacket: "images/lights-camera-action.jpg",
+    quote1: "そんなに勝手に　とらないで",
+    quote2: "フレームつけて　切り取らないで",
+    title: "lights,camera,action!",
+    link: "tracks/lights-camera-action.html"
+  },
+  {
+    jacket: "images/nontitle.jpg",
+    quote1: "それは同じものがないクラシック",
+    quote2: "いつも出来事は偶然だ",
+    title: "non title",
+    link: "tracks/nontitle.html"
+  },
+    {
+    jacket: "images/turaturatubaki.jpg",
+    quote1: "その先にある　その先が知りたい",
+    quote2: "にわとりの先の　たまごのその先",
+    title: "つらつら椿",
+    link: "tracks/turaturatubaki.html"
+  },
+  {
+    jacket: "images/coin-locker.jpg",
+    quote1: "海辺の電話ボックスは",
+    quote2: "非常口みたいだった",
+    title: "コインロッカー",
+    link: "tracks/coin-locker.html"
+  },
+ {
+    jacket: "images/rojoukansoku.jpg",
+    quote1: "気づいて　しまった",
+    quote2: "気づいて　しまった　どうしよう",
+    title: "路上観測",
+    link: "tracks/rojoukansoku.html"
+  },
+  {
+    jacket: "images/offlineonline.jpg",
+    quote1: "デンパにのって　どうでもいいハナシを",
+    quote2: "デンパにのって　たわいもないハナシを",
+    title: "オフライン online",
+    link: "tracks/offlineonline.html"
+  },
+    {
+    jacket: "images/tajigen-spectrum.jpg",
+    quote1: "↑↑↓↓←→←→",
+    quote2: "魔法のコマンドで　強くなる",
+    title: "多次元スペクトラム",
+    link: "tracks/tajigen-spectrum.html"
+  },
+  {
+    jacket: "images/yoru-no-mannakade.jpg",
+    quote1: "バイパスくぐる　トンネルで",
+    quote2: "ワープした先は　青い星",
+    title: "夜の真ん中で",
+    link: "tracks/yoru-no-mannakade.html"
+  },
+    {
     jacket: "images/fire-flower.jpg",
     quote1: "花火大会よりも　ハードディスク",
     quote2: "消える前に　バックアップkiss",
