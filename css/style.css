@@ -222,6 +222,7 @@ header {
 
 .about-logo img {
   width: 150px;
+  border-radius: 50%;
   opacity: 0.9;
 }
 
